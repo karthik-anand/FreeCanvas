@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageButton
+        android:id="@+id/ib_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/skin"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@id/ib_yellow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/ib_yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/yellow"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@id/ib_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_skin"/>
+
+    <ImageButton
+        android:id="@+id/ib_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/red"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@id/ib_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_yellow"/>
+
+    <ImageButton
+        android:id="@+id/ib_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/black"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@id/ib_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_red"/>
+
+    <ImageButton
+        android:id="@+id/ib_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/green"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@id/ib_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_black"/>
+
+    <ImageButton
+        android:id="@+id/ib_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/blue"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toTopOf="@id/ib_navy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_green"/>
+
+    <ImageButton
+        android:id="@+id/ib_navy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@color/lollipop"
+        android:minWidth="20dp"
+        android:minHeight="20dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ib_blue"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
